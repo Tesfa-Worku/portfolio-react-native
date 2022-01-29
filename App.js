@@ -3,14 +3,16 @@ import Home from "./src/Home";
 import Career from './src/Career';
 import Portfolio from './src/Portfolio';
 import Education from './src/Education';
+import Drawer from './src/Drawer';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Home />
+      {/* <Home />
       <Career />
       <Portfolio />
-      <Education />      
+      <Education />       */}
+      <Drawer />
     </View>
   );
 }
