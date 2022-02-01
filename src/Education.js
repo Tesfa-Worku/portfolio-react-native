@@ -19,9 +19,10 @@ export default function Education() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
+        flexDirection: 'column', 
+        backgroundColor: '#fff',            
         justifyContent: 'center',
+        marginTop: 100,            
     },
     bold: {
         fontWeight: 'bold',
