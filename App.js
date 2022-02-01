@@ -1,19 +1,26 @@
-import { StyleSheet, View } from 'react-native';
+
+import { StatusBar } from "expo-status-bar";
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import Home from "./src/Home";
 import Career from './src/Career';
 import Portfolio from './src/Portfolio';
 import Education from './src/Education';
-import Drawer from './src/Drawer';
+import Nav from "./src/Nav";
+import { useState } from "react";
 
 export default function App() {
+
+  const [page,setPage] = useState("Home");
+
   return (
-    <View style={styles.container}>
-      {/* <Home />
-      <Career />
-      <Portfolio />
-      <Education />       */}
-      <Drawer />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Nav setPage={setPage}/>
+        {page === "Home" && <Home />}
+        {page === "Career" && <Career />}
+        {page === "Portfolio" && <Portfolio/>}
+        {page === "Education" && <Education/>}      
+      <StatusBar style="auto" /> 
+    </SafeAreaView>
   );
 }
 
@@ -23,5 +30,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    // padding: 10,
+    margin: 10,
   },
 });
