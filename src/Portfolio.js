@@ -6,27 +6,38 @@ export default function Portfolio() {
             <Text>
                 Portfolio
             </Text>
-            <Text>
-                <Text>
-                    {/* <a className="nav-link" href="https://luceroweb.github.io/haunted-house-game/#/" target="_blank" rel="noreferrer">Haunted House Game</a> */}
+            <View style={styles.wrp}>
+                <Text>                    
                     <Text style={{color: 'blue'}}
                             onPress={() => Linking.openURL('https://luceroweb.github.io/haunted-house-game/#/')}>
                             Haunted House Game
                     </Text>
                 </Text>
-                {/* <li className="nav-item border-light border-bottom">
-                    <a className="nav-link" href="https://tesfa-worku.github.io/Decidr/" target="_blank" rel="noreferrer">Decider</a>
-                </li>
-                <li className="nav-item border-light border-bottom">
-                    <a className="nav-link" href="https://tesfa-worku.github.io/ecard/" target="_blank" rel="noreferrer">ecard</a>
-                </li>
-                <li className="nav-item border-light border-bottom">
-                    <a className="nav-link" href="https://expo.dev/@tesfa-worku/team-marvel-project" target="_blank" rel="noreferrer">Marvel Space</a>
-                </li>
-                <li className="nav-item border-light border-bottom">
-                    <a className="nav-link" aria-current="page" href="https://github.com/Tesfa-Worku/todo-list-app" rel="noreferrer" target="_blank">To do App</a>
-                </li> */}
-            </Text>
+                <Text>                    
+                    <Text style={{color: 'blue'}}
+                            onPress={() => Linking.openURL('https://expo.dev/@tesfa-worku/team-marvel-project')}>
+                            Marvel Space
+                    </Text>
+                </Text>
+                <Text>                    
+                    <Text style={{color: 'blue'}}
+                            onPress={() => Linking.openURL('https://tesfa-worku.github.io/Decidr/')}>
+                            Decidr
+                    </Text>
+                </Text>
+                <Text>                    
+                    <Text style={{color: 'blue'}}
+                            onPress={() => Linking.openURL('https://tesfa-worku.github.io/ecard/')}>
+                            e card
+                    </Text>
+                </Text>
+                <Text>                    
+                    <Text style={{color: 'blue'}}
+                            onPress={() => Linking.openURL('https://github.com/Tesfa-Worku/todo-list-app')}>
+                            To do app
+                    </Text>
+                </Text>
+            </View>
         </View>
     );
 }
@@ -38,4 +49,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    wrp: {
+        flex: 0,        
+    }
 });
