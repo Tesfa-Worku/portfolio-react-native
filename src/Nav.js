@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   View,
@@ -9,66 +8,61 @@ import {
 
 export default function Nav({ setPage }) {  
   return (
-    <View style={styles.container}>
-      <View style={{color: 'white'}}>
+    <>
+      <View style={styles.container}>
         <Pressable onPress={() => setPage("Home")}>
           <View>
-            <View style={{color: 'white'}}>
+            <View>
               <Text style={{color: 'white'}}>Tesfa Worku</Text>
               <Text style={{color: 'white'}}>I Build things for the Web</Text>
             </View>
           </View>
         </Pressable>
       </View>
-      <View >
-        <View style={styles.cont2}>
-          <Pressable onPress={() => setPage("Home")}>
-            <Text style={{color: 'white'}} name="Home">
-              Home
-            </Text>
-          </Pressable>
-          <Pressable onPress={() => setPage("Portfolio")}>
-            <Text style={{color: 'white'}} name="Portfolio">
-              Portfolio
-            </Text>
-          </Pressable>
-          <Pressable onPress={() => setPage("Career")}>
-            <Text style={{color: 'white'}} name="Career">
-              Career
-            </Text>
-          </Pressable>
-          <Pressable onPress={() => setPage("Education")}>
-            <Text style={{color: 'white'}} name="Education">
-              Education
-            </Text>
-          </Pressable>          
-        </View>
-      </View>
-    </View>
+      <View style={styles.cont2}>
+        <Pressable onPress={() => setPage("Home")}>
+          <Text style={{color: '#F2D379'}} name="Home">
+            Home
+          </Text>
+        </Pressable>
+        <Pressable onPress={() => setPage("Portfolio")}>
+          <Text style={{color: '#F2D379'}} name="Portfolio">
+            Portfolio
+          </Text>
+        </Pressable>
+        <Pressable onPress={() => setPage("Career")}>
+          <Text style={{color: '#F2D379'}} name="Career">
+            Career
+          </Text>
+        </Pressable>
+        <Pressable onPress={() => setPage("Education")}>
+          <Text style={{color: '#F2D379'}} name="Education">
+            Education
+          </Text>
+        </Pressable> 
+      </View>      
+    </>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    flexGrow: 0,
-    padding: 80,
+    flex: 1,    
     width: '100%',
+    maxHeight: "8%",
     backgroundColor: '#000',    
     flexDirection: 'column',
-    // alignItems: 'flex-start',
-    // justifyContent: 'stretch',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
     marginTop: 10,        
   },
   cont2: {
     flex: 1,
-    width: '100%',
-    flexGrow: 0,
+    width: '100%',    
+    maxHeight: "4%",
+    backgroundColor: '#000',
     flexDirection: 'row',
-    alignItems: 'flex-start',
-    justifyContent:'space-between',
-    marginTop: 20,
-    marginLeft: 20,
-    
+    alignItems: 'center',
+    justifyContent:'space-evenly',   
   }
 });
