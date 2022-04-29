@@ -5,7 +5,7 @@ export default function Career() {
         <View style={styles.container}>
             <Text>Career Development</Text>        
             <Text>
-                Bitwise Industries – Fresno, CA: 2021-Present
+                Bitwise Industries - Fresno, CA: 2021-Present
             </Text>
             <Text>
                 React/React-Native Apprentice 
@@ -18,7 +18,7 @@ export default function Career() {
             <Text style={styles.wrp2}>
                 <Text style={styles.wrp2}>React</Text>
                 <Text style={styles.wrp2}>JavaScript</Text>
-                <Text>css</Text>
+                <Text>CSS</Text>
                 <Text>HTML</Text>
                 <Text>Agile</Text>
             </Text>
