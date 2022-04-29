@@ -1,5 +1,4 @@
-import { StatusBar } from "expo-status-bar";
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, View} from 'react-native';
 import Home from "./src/Home";
 import Career from './src/Career';
 import Portfolio from './src/Portfolio';
@@ -15,22 +14,22 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Nav setPage={setPage}/>
+      <View style={styles.pages}>
         {page === "Home" && <Home />}
         {page === "Career" && <Career />}
         {page === "Portfolio" && <Portfolio/>}
         {page === "Education" && <Education/>}
-      <Footer />      
-      <StatusBar style="auto" /> 
-    </SafeAreaView>
+      </View>
+      <Footer /> 
+    </SafeAreaView>    
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',   
-    margin: 10,
   },
+  pages: {
+    flex: 1
+  }
 });
