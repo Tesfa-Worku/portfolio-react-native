@@ -24,8 +24,7 @@ export default function Home() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        flexDirection: 'row', 
-        // backgroundColor: '#F2D379',            
+        flexDirection: 'row',                    
         justifyContent: 'space-between',                        
     },
     textContainer: {
@@ -40,12 +39,13 @@ const styles = StyleSheet.create({
         fontSize: 28,
     },
     imageSize: {
-        width: "40%",
+        flex: 1,
+        width: "20%",
         height: "100%",
+        aspectRatio: 2/3
     },
     containerSmallScreen: {
-        flex: 1,
-        // backgroundColor: '#F2D379',            
+        flex: 1,                    
         justifyContent: 'space-between',
     },
     imageSizeSmallScreen: {
