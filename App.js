@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, View} from 'react-native';
+import { SafeAreaView, StyleSheet, ScrollView} from 'react-native';
 import Home from "./src/Home";
 import Career from './src/Career';
 import Portfolio from './src/Portfolio';
@@ -14,12 +14,12 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Nav setPage={setPage}/>
-      <View style={styles.pages}>
+      <ScrollView style={styles.pages}>
         {page === "Home" && <Home />}
         {page === "Career" && <Career />}
         {page === "Portfolio" && <Portfolio/>}
         {page === "Education" && <Education/>}
-      </View>
+      </ScrollView>
       <Footer /> 
     </SafeAreaView>    
   );
@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   pages: {
-    flex: 1
+    flex: 1,
+    overflow: "hidden",
   }
 });
