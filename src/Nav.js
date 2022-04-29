@@ -8,11 +8,11 @@ import {
 
 export default function Nav({ setPage }) {  
   return (
-    <>
-      <View style={styles.container}>
+    <View style={styles.container}>
+      <View>
         <Pressable onPress={() => setPage("Home")}>
           <View>
-            <View>
+            <View style={{marginTop: 5}}>
               <Text style={{color: 'white'}}>Tesfa Worku</Text>
               <Text style={{color: 'white'}}>I Build things for the Web</Text>
             </View>
@@ -41,7 +41,7 @@ export default function Nav({ setPage }) {
           </Text>
         </Pressable> 
       </View>      
-    </>
+    </View>
   );
 };
 
@@ -53,13 +53,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#000',    
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'space-evenly',
-    marginTop: 10,        
+    justifyContent: 'space-evenly',        
   },
   cont2: {
     flex: 1,
-    width: '100%',    
-    maxHeight: "4%",
+    width: '100%',
     backgroundColor: '#000',
     flexDirection: 'row',
     alignItems: 'center',
