@@ -3,7 +3,7 @@ import { StyleSheet, View, Text } from 'react-native';
 export default function Footer() {
     return (
         <View style={styles.container}>
-            <Text style={styles.textColor}>1836 Metzerott Rd, Adelphi, MD 20783</Text>
+            <Text style={styles.textColor}>Adelphi, MD</Text>            
             <Text style={styles.textColor}>(240) 705-4466</Text>
             <Text style={styles.textColor}>hopegorg@gmail.com</Text>
         </View>
