@@ -1,15 +1,16 @@
 {
   "name": "portfolio-react-native",
   "version": "1.0.0",
+  "homepage":"http://Tesfa-Worku.github.io/portfolio",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
+    "start": "expo start",    
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d web-build",
+    "predeploy": "expo build:web"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.7",
