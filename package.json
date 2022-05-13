@@ -1,10 +1,10 @@
 {
   "name": "portfolio-react-native",
   "version": "1.0.0",
-  "homepage":"http://Tesfa-Worku.github.io/portfolio",
+  "homepage": "http://Tesfa-Worku.github.io/portfolio-react-native",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",    
+    "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
@@ -17,6 +17,7 @@
     "@react-navigation/native-stack": "^6.3.0",
     "expo": "~44.0.0",
     "expo-status-bar": "~1.2.0",
+    "gh-pages": "^4.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
