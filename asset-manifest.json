@@ -1,0 +1,23 @@
+{
+  "files": {
+    "app.js": "/portfolio-react-native/static/js/app.c6ceb281.chunk.js",
+    "app.js.map": "/portfolio-react-native/static/js/app.c6ceb281.chunk.js.map",
+    "runtime~app.js": "/portfolio-react-native/static/js/runtime~app.77131ee0.js",
+    "runtime~app.js.map": "/portfolio-react-native/static/js/runtime~app.77131ee0.js.map",
+    "static/js/2.aab0008b.chunk.js": "/portfolio-react-native/static/js/2.aab0008b.chunk.js",
+    "static/js/2.aab0008b.chunk.js.map": "/portfolio-react-native/static/js/2.aab0008b.chunk.js.map",
+    "favicon-16.png": "/portfolio-react-native/favicon-16.png",
+    "favicon-32.png": "/portfolio-react-native/favicon-32.png",
+    "favicon.ico": "/portfolio-react-native/favicon.ico",
+    "index.html": "/portfolio-react-native/index.html",
+    "manifest.json": "/portfolio-react-native/manifest.json",
+    "serve.json": "/portfolio-react-native/serve.json",
+    "static/js/2.aab0008b.chunk.js.LICENSE.txt": "/portfolio-react-native/static/js/2.aab0008b.chunk.js.LICENSE.txt",
+    "static/media/Tesfa.jpg": "/portfolio-react-native/static/media/Tesfa.c0cc132a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.77131ee0.js",
+    "static/js/2.aab0008b.chunk.js",
+    "static/js/app.c6ceb281.chunk.js"
+  ]
+}
